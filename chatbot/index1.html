@@ -1,0 +1,30 @@
+<html lang="en">
+<link rel="stylesheet" href="./style1.css">
+<body>
+    <div id="chat-container">
+        <div id="chat-box">
+          <div id="titlebox">
+            <div id="title-text">LEGAL NAVIGATOR</div>
+            <button id="menu-button">
+              <div></div>
+              <div></div>
+              <div></div>
+          </button>
+        </div>
+            <div id="messages"></div>
+            <div id="input-area">
+                <input type="text" id="user-input" placeholder="Type your message..." />
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        var SCRIPT_ROOT = "{{ request.script_root|tojson|safe }}";
+       </script>
+        
+        <script type="text/javascript" src="./index1.js"></script>
+    
+</body>
+</html>
