@@ -23,7 +23,7 @@ body {
 }
 .logo_bar{
     overflow: hidden;
-    background-color: rgb(221, 221, 13);
+    background-color: orange;
     padding-top: 22px;
     padding-right: 20px;
     padding-bottom: 22px;
@@ -70,8 +70,8 @@ body {
     right: 20px; 
     width: 80px; 
     height: 80px; 
-    background-color: #fff; 
-    border-radius: 80%; 
+    background-color: grey; 
+    border-radius: 50%; /* Ensure this is set to 50% for a circular shape */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     cursor: pointer; 
     z-index: 1000; 
@@ -80,11 +80,11 @@ body {
     align-items: center;
     justify-content: center;
     transition: transform 0.2s ease-in-out; 
+    overflow: hidden; /* Add this to handle any overflowing content */
 }
 .chatbot-icon:hover {
     animation: bounce 1.2s infinite;
 }
-
 
 @keyframes bounce {
     0%, 100% {
@@ -94,6 +94,7 @@ body {
         transform: translateY(-5px); 
     }
 }
+
 
 .container01 {
     display: flex;
@@ -230,41 +231,6 @@ body {
     font-size: 14px;
     color: #666;
 }
-
-.mentor{
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 85px;
-    padding-bottom: 100px;
-    color: white;
-    font-size: 29px;
-    background-color: black;
-}
-.mentor button[type=button]{
-    background-color: #af0404;
-    color: white;
-    font-size: 20px;
-}
-.mentors-container {
-    background-color: #af0404; 
-    padding: 20px; 
-    display: flex;
-    justify-content: space-between; 
-}
-
-.mentors_img {
-    width: calc(33.33% - 20px); 
-    box-sizing: border-box;
-    text-align: center; 
-
-}
-.mentors_img img {
-    max-width: 100%;
-    height: auto;
-    border: none; 
-}
-
 .text-box {
     background-color: #fff; 
     padding: 10px; 
@@ -284,21 +250,7 @@ body {
 }
 
 
-.guarntee{
-    text-align: center;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 45px;
-    padding-bottom: 35px;
-    font-size: 38px;
-    color: white;
-    background-color: black;
-}
-.guarntee button[type=button]{
-    background-color: #af0404;
-    color: white;
-    font-size: 20px;
-}
+
 .process_1{
     text-align: center;
     font-size: 37px;
